@@ -151,3 +151,117 @@
 # print(num_list)
 
 # 1:31:36
+
+# cabinet = {"A-3":"유재석", "B-100":"조세호"}
+# print(cabinet[3])
+# print(cabinet[100]) 
+
+# print(cabinet.get(3))
+# print(cabinet[5]) #오류발생 & 프로그램 종료
+# print(cabinet.get(5)) #none출력
+# print(cabinet.get(5, "비었다"))
+# print("hi")
+
+# print(3 in cabinet) #True
+# print(5 in cabinet) #False
+
+# print(cabinet["A-3"])
+# print(cabinet["B-100"])
+
+#insert
+# print(cabinet)
+# cabinet["C-29"] = "김태호"
+# cabinet["A-10"] = "윤효전"
+# print(cabinet)
+
+# #delete
+# del cabinet["C-29"]
+# print(cabinet)
+
+#key만 출력하기
+# print(cabinet.keys())
+
+#value만 출력하기
+# print(cabinet.values())
+
+#(key, value)쌍으로 출력하기
+# print(cabinet.items())
+
+#clear
+# cabinet.clear()
+# print(cabinet)
+
+#<튜플> - 변경되지 않는 리스트
+# menu = ("돈까스", "치즈까스")
+# print(menu[0])
+# print(menu[1])
+
+# menu.add("생선까스") #추가 불가
+
+# name = "김종국"
+# age = 29
+# hobby = "코딩"
+# print(name, age, hobby)
+
+# (name, age, hobby) = ("김종국", 20, "코딩")
+# print(name, age, hobby)
+
+#<세트> - 중복X, 순서X
+# my_set = {1, 2, 3, 3, 3}
+# print(my_set)
+
+# java = {"윤효전", "김태호", "조세호"}
+# python = set(["윤효전", "윤혜영"])
+
+#교집합
+# print(java & python)
+# print(java.intersection(python))
+
+#합집합
+# print(java | python)
+# print(java.union(python))
+
+#차집합
+# print(java - python)
+# print(java.difference(python))
+
+# print(python)
+# python.add("김태호")
+# print(python)
+
+# python.remove("김태호")
+# print(python)
+
+#자료구조의 변경
+# menu = {"커피", "우유", "주스"}
+# print(menu, type(menu)) # set {}
+  
+# menu = list(menu)
+# print(menu, type(menu)) # list []
+
+# menu = tuple(menu) 
+# print(menu, type(menu)) # tuple ()
+
+# menu = set(menu)
+# print(menu, type(menu)) # set
+
+# if
+# weather = input("날씨 어때? ")
+# if weather == "비" or weather == "눈":
+#     print("우산 챙기셈")
+# elif weather == "미세먼지":
+#     print("마스크 챙기셈")
+# else:
+#     print("준비물 필요없음")
+
+# temp = int(input("기온 어때? "))
+# if 30 <= temp:
+#     print("너무 덥다")
+# elif 10 <= temp and temp < 30:
+#     print("날씨 괜춘")
+# elif 0 <= temp and temp < 10:
+#     print("외투 챙기셈")
+# else:
+#     print("너무 춥다")
+
+#2:05:08
