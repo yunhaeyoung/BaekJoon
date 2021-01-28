@@ -265,3 +265,110 @@
 #     print("너무 춥다")
 
 #2:05:08
+
+# for
+# for waiting_no in [0, 1, 2, 3, 4]:
+#     print("대기 번호 : {0}".format(waiting_no))
+
+# for waiting_no in range(1, 6): #1, 2, 3, 4, 5
+#     print("대기 번호 : {0}".format(waiting_no))
+
+# starbucks = ["아이언맨", "토르", "아이엠그루트"]
+# for customer in starbucks:
+#     print("{0}, 커피가 준비되었습니다".format(customer))
+
+# while
+# customer = "토르"
+# index = 5
+# while index >= 1:
+#     print("{0}, 커피 준비됨. {1}번 남았다".format(customer, index))
+#     index -= 1
+# if index == 0:
+#     print("커피 폐기")
+
+# customer = "아이언맨"
+# index = 1
+# while True:
+#     print("{0}, 커피 준비됨. {1}번 호출".format(customer, index))
+#     index += 1
+
+# customer = "토르"
+# person = "Unknown"
+
+# while person != customer:
+#     print("{0}, 커피 준비됨".format(customer))
+#     person = input("이름 ? ")
+
+# absent = [2, 5] #결석
+# no_book = [7]
+# for student in range(1, 11): #1~10
+#     if student in absent:
+#         continue
+#     elif student in no_book:
+#         print("오늘 수업 끝, {0} 때문임".format(student))
+#         break
+#     print("{0} 책 읽어라".format(student))
+
+# students = [1, 2, 3, 4, 5]
+# print(students)
+# students = [i+100 for i in students]
+# print(students)
+
+# students = ["IronMan", "Thor", "IAmGroot"]
+# print(students)
+# students = [len(i) for i in students]
+# print(students)
+
+# students = ["IronMan", "Thor", "IAmGroot"]
+# print(students)
+# students = [i.upper() for i in students]
+# print(students)
+
+# 함수
+# def open_account():
+#     print("새로운 계좌가 생성됨")
+
+# def deposit(balance, money): #입금
+#     print("입금 완료. 잔액 : {0} 원".format(balance + money))
+#     return balance + money
+
+# def withdraw(balance, money): #출금
+#     if balance >= money:
+#         print("출금 완료. 잔액은 {0} 원".format(balance - money))
+#         return balance - money
+#     else:
+#         print("출금 불가. 잔액은 {0} 원".format(balance))
+#         return balance
+
+# def withdraw_night(balance, money):
+#     commission = 100
+#     return commission, balance - money - commission
+
+# balance = 0
+# balance = deposit(balance, 1000)
+# balance = deposit(balance, 500)
+
+# balance = withdraw(balance, 300)
+# balance = withdraw(balance, 10000)
+
+# commission, balance = withdraw_night(balance, 500)
+# print("수수료 : {0} 원\t잔액 : {1} 원".format(commission, balance))
+
+# def profile(name, age, main_lang):
+#     print("이름 : {0}\t나이 : {1}\t주 사용 언어 : {2}".format(name, age, main_lang))
+
+# profile("윤효전", 29, "Python")
+# profile("윤혜영", 24, "Java")
+
+# 기본값
+# def profile(name, age = 20, main_lang = "C"):
+#     print("이름 : {0}\t나이 : {1}\t주 사용 언어 : {2}".format(name, age, main_lang))
+
+# profile("윤효전")
+# profile("윤혜영")
+
+def profile(name, age, main_lang):
+    print(name, age, main_lang)
+
+profile(name = "유재석", main_lang = "Python", age = 20)
+profile(main_lang = "Java", age = 29, name = "김태호")
