@@ -1,20 +1,28 @@
 N = int(input()[0])
 list = []
 
-
 x = input().split()
-list.append(x)
 
-print(list[0])
-print(list[1])
-print(list[2])
+totalY = 0
+totalM = 0
 
+# print(x[0])
+# print(x[1])
+# print(x[2])
 
-#totalY, totalM = 0
+for i in range(len(x)):
+    totalY += (int(x[i]) // 30 + 1) * 10
 
-#print(list[0])
+#print(totalY)
 
-# for i in range(N):
-#     totalY += (list[i] // 30 + 1) * 10
+for i in range(len(x)):
+    totalM += (int(x[i]) // 60 + 1) * 15
 
-# print(totalY)
+#print(totalM)
+
+if totalY < totalM:
+    print("Y", totalY)
+elif totalM < totalY:
+    print("M", totalM)
+else:
+    print("Y", "M", totalY)
