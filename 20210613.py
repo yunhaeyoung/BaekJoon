@@ -56,7 +56,13 @@
 # print("하\\이\\안\\녕\\하\\세\\요")
 
 # \r : 커서를 맨 앞으로 이동
-print("Red  Apple\rPine") #커서를 맨 앞으로 이동해서 겹쳐쓰기
+# print("Red  Apple\rPine") #커서를 맨 앞으로 이동해서 겹쳐쓰기
 
 # \b : 백스페이스 (한 글자 삭제)
-print("Redd \bApple")
+# print("Redd\bApple")
+
+# \t : 탭
+# print("이것봐라\t여깄지롱")
+
+# Quiz 3
+#1:16:27
