@@ -91,4 +91,65 @@
 # number %= 4
 # print(number)
 
-#36:48 ~ 
+# 숫자 처리 함수
+# print(abs(-5)) #절대값
+# print(pow(4, 2)) #4^2
+# print(max(5, 12))
+# print(min(5, 12))
+# print(round(3.14)) #반올림
+# print(round(4.6))
+
+# from math import *
+# print(floor(4.99)) #내림
+# print(ceil(4.11)) #올림
+# print(sqrt(16)) #제곱근
+
+# 랜덤 함수
+# from random import *
+
+# print(random()) # 0.0 ~ 1.0 미만의 랜덤 값
+# print(random() * 100) # 0.0 ~ 100.0 미만의 랜덤 값
+# print(int(random() * 100))
+# print(int(random() * 100) + 1) # 1 ~ 100 이하의 랜덤 값
+
+# print(int(random() * 45) + 1)
+# print(int(random() * 45) + 1)
+# print(int(random() * 45) + 1)
+# print(int(random() * 45) + 1)
+# print(int(random() * 45) + 1)
+# print(int(random() * 45) + 1)
+
+# print(randrange(1, 46)) # 1 ~ 46 미만의 랜덤 값
+# print(randint(1, 45)) # 1 ~ 45 이하의 랜덤 값
+
+# Quiz 2
+# from random import *
+
+# date = randint(4, 28)
+
+# print("오프라인 스터디 모임 날짜는 매월", date, "일로 선정되었습니다.")
+
+# 문자열
+# sentence1 = '나는 멋지다'
+# print(sentence1)
+# sentence2 = "나는 멋지다"
+# print(sentence2)
+
+# sentence3 = """
+# 나는 멋지고
+# 나는 멋지다
+# """
+# print(sentence3)
+
+# 슬라이싱
+# personalInfo = "981014-2345678"
+# print("성별 : " + personalInfo[7])
+# print("년도 : " + personalInfo[0:2]) # 0 ~ 2 이전까지
+# print("월 : " + personalInfo[2:4])
+# print("일 : " + personalInfo[4:6])
+
+# print("생년월일 : " + personalInfo[:6]) # == 0:6
+# print("뒤 7자리 : " + personalInfo[7:]) # == 7:끝
+# print("뒤 7자리(뒤에서 부터) : " + personalInfo[-7:]) #맨 뒤에서 7번째:끝
+
+# 문자열 처리 함수 55:09
